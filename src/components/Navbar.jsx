@@ -2,43 +2,35 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  return (
-    <nav className="bg-white border-b shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        {/* Logo + Title */}
-        <div
-          className="flex items-center gap-2 cursor-pointer"
-          onClick={() => navigate("/")}
-        >
-          <h1 className="text-xl font-bold text-gray-800">ReactJS Mini Projects</h1>
-        </div>
+    return (
+        <nav className="bg-gray-100 shadow-sm">
+            <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+                {/* Logo and Title */}
+                <div className="cursor-pointer"
+                    onClick={() => navigate("/")}
+                >
+                    <h1 className="text-lg font-bold text-gray-800">
+                        ReactJS Mini Projects
+                    </h1>
+                </div>
 
-        {/* Optional navigation items (expandable if needed) */}
-        <div className="hidden md:flex gap-6 text-gray-700 text-sm font-medium">
-          <button
-            onClick={() => navigate("/")}
-            className="hover:text-blue-600 transition"
-          >
-            Home
-          </button>
-          <button
-            onClick={() => navigate("/about")}
-            className="hover:text-blue-600 transition"
-          >
-            About
-          </button>
-          <button
-            onClick={() => navigate("/contact")}
-            className="hover:text-blue-600 transition"
-          >
-            Contact
-          </button>
-        </div>
-      </div>
-    </nav>
-  );
+                {/* Nav Links */}
+                <div className="flex space-x-4 text-xl font-medium text-gray-700 ">
+                    <button onClick={() => navigate("/")} className="hover:text-blue-600 cursor-pointer">
+                        Home
+                    </button>
+                    <button onClick={() => navigate("/projects")} className="hover:text-blue-600 cursor-pointer">
+                        Projects
+                    </button>
+                    <button onClick={() => navigate("/about")} className="hover:text-blue-600 cursor-pointer">
+                        About
+                    </button>
+                </div>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar;
