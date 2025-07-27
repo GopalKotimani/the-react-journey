@@ -1,0 +1,14 @@
+
+
+.tabs-container{
+display: flex;
+}
+.tabs{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tabs-content{
+    height: 200px;
+    border: 1px solid black;
+}
