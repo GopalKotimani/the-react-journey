@@ -6,9 +6,20 @@ display: flex;
 .tabs{
     border: 1px solid black;
     padding: 5px;
+    cursor: pointer;
 }
 
-.tabs-content{
-    height: 200px;
+.tabs-content {
+    padding: 5px;
+    height: 300px;
     border: 1px solid black;
+    display: flex;
+}
+.submit, .next, .prev{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.error{
+    color: red;
 }
