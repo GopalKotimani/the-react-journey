@@ -19,7 +19,7 @@ const ProgressBar = () => {
                     <span className='text-white'>{progress}%</span>
                 </div>
             </div>
-            <div className='m-5 space-x-3'>
+            <div className='m-5 space-x-3 text-white'>
                 <button
                     className='bg-gray-500 border w-20 rounded-sm cursor-pointer'
                     onClick={() => updateProgress(-10)}
