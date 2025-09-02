@@ -33,6 +33,12 @@ const ProjectDetails = () => {
           >
             Tab Form Build
           </li>
+          <li
+            className="cursor-pointer text-blue-600 hover:underline"
+            onClick={() => handleClick('progressbar')}
+          >
+            Progress Bar
+          </li>
         </ul>
       )}
     </div>

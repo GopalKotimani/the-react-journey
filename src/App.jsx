@@ -7,6 +7,7 @@ import TodoApp from './problems/TodoApp/TodoApp'
 import TabForm from './problems/TabFormBuild/TabForm'
 import Pagination from './problems/Pagination/Pagination'
 import SearchBar from './problems/AutoCompleteSearchBar/SearchBar'
+import ProgressBar from './problems/Progressbar/ProgressBar'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/projects/tabformbuild" element={<TabForm />} />
           <Route path="/projects/pagination" element={<Pagination />} />
           <Route path="/projects/searchbar" element={<SearchBar />} />
+          <Route path="/projects/progressbar" element={<ProgressBar />} />
         </Routes>
       </div>
     </Router>
